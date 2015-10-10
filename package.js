@@ -11,7 +11,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.use('aldeed:simple-schema');
+  api.use('aldeed:simple-schema@1.3.3');
   api.addFiles('simple-schema-omit.js');
 });
 
