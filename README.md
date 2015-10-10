@@ -17,10 +17,14 @@ MySchema = new SimpleSchema({
   },
   field2: {
     type: String
+  },
+  field3: {
+    type: String
   }
 });
 
 NewPrunedSchema = MySchema.omit(['field1']);
+// `NewPrunedSchema` only has the definition for `field2` and `field3` now
 ```
 
 The prototype method was modeled after its counter part, [pick](https://github.com/aldeed/meteor-simple-schema/blob/302388c2f2418267a8ef5be767b5d0595875ccb2/simple-schema.js#L658-L665).
